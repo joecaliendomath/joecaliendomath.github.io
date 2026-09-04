@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+  --paper: #FFFFFF;
+  --ink: #12161B;
+  --ink-soft: #4A5A6B;
+  --rule: #D7E0E8;
+  --red: #1D4E8F;
+  --gold: #12161B;
+  --max-w: 720px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--red);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+a:hover, a:focus-visible {
+  border-bottom-color: currentColor;
+}
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 2px;
+}
+
+.wrap {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+header.site-header {
+  border-bottom: 1px solid var(--rule);
+  padding: 28px 0 16px;
+}
+
+nav.site-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+}
+
+.site-name {
+  font-family: 'Source Serif 4', serif;
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: var(--ink);
+  border: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 22px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.85rem;
+}
+
+.nav-links a {
+  color: var(--ink-soft);
+}
+.nav-links a.active {
+  color: var(--red);
+  border-bottom: 1px solid var(--red);
+}
+
+main {
+  padding: 56px 0 80px;
+}
+
+h1 {
+  font-family: 'Source Serif 4', serif;
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 1.15;
+  margin: 0 0 8px;
+}
+
+h2.page-title {
+  font-family: 'Source Serif 4', serif;
+  font-weight: 700;
+  font-size: 2.1rem;
+  margin: 0 0 6px;
+}
+
+.subtitle {
+  color: var(--ink-soft);
+  font-size: 1.1rem;
+  margin: 0 0 36px;
+}
+
+.lede {
+  color: var(--ink-soft);
+  margin: 0 0 40px;
+  max-width: 60ch;
+}
+
+/* the "model summary" block on the homepage */
+.model-summary {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.88rem;
+  background: #F3F7FB;
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--red);
+  padding: 20px 24px;
+  margin: 0 0 44px;
+  overflow-x: auto;
+}
+.model-summary .call {
+  color: var(--ink-soft);
+  margin-bottom: 14px;
+}
+.model-summary dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 6px 24px;
+  margin: 0;
+}
+.model-summary dt {
+  color: var(--ink-soft);
+}
+.model-summary dd {
+  margin: 0;
+  color: var(--ink);
+}
+
+.links-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 28px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+section.block {
+  padding: 32px 0;
+  border-top: 1px solid var(--rule);
+}
+section.block:first-of-type {
+  border-top: none;
+  padding-top: 0;
+}
+
+.entry-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 4px;
+}
+
+h3.entry-title {
+  font-family: 'Source Serif 4', serif;
+  font-weight: 600;
+  font-size: 1.35rem;
+  margin: 0;
+}
+
+.entry-meta {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+}
+
+.entry-org {
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  margin: 0 0 14px;
+}
+
+ul.entry-list {
+  margin: 0 0 14px;
+  padding-left: 1.2em;
+}
+ul.entry-list li {
+  margin-bottom: 8px;
+}
+ul.entry-list li:last-child {
+  margin-bottom: 0;
+}
+
+.stack {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--gold);
+}
+
+h4.group-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+  text-transform: none;
+  letter-spacing: 0.02em;
+  margin: 0 0 20px;
+}
+
+footer.site-footer {
+  border-top: 1px solid var(--rule);
+  padding: 24px 0 48px;
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 2.1rem; }
+  h2.page-title { font-size: 1.7rem; }
+  .model-summary dl { grid-template-columns: 1fr; gap: 2px 0; }
+  .model-summary dd { margin-bottom: 8px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

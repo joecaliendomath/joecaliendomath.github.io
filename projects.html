@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Joseph Caliendo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <nav class="site-nav">
+      <a href="index.html" class="site-name">Joseph Caliendo</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="experience.html">Experience</a>
+        <a href="tutoring.html">Tutoring</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <h2 class="page-title">Projects</h2>
+    <p class="lede">Independent statistical and machine-learning work, mostly built on sports and media data.</p>
+
+    <section class="block">
+      <div class="entry-head">
+        <h3 class="entry-title">YouTube Video Title Analysis and Its Effect on Views</h3>
+        <span class="entry-meta">Aug 2026</span>
+      </div>
+      <ul class="entry-list">
+        <li>Extracted and engineered a dataset of 17,933 YouTube videos across 93 channels and 5 content categories using the YouTube Data API v3, building a Python collection pipeline.</li>
+        <li>Engineered a channel-normalized performance metric across 5 video-age buckets to make videos of different ages and channel sizes comparable.</li>
+        <li>Applied OLS regression and Gradient Boosting (scikit-learn) with channel-grouped cross-validation to test whether patterns generalize to channels the model hadn't seen.</li>
+      </ul>
+      <div class="stack">Python · YouTube Data API v3 · pandas · scikit-learn</div>
+    </section>
+
+    <section class="block">
+      <div class="entry-head">
+        <h3 class="entry-title">NBA MVP Regression Model, 2000–2026</h3>
+        <span class="entry-meta">Jun 2026</span>
+      </div>
+      <ul class="entry-list">
+        <li>Designed a multivariate linear regression model in R to predict the NBA's MVP for every season from 2000 to 2026.</li>
+        <li>Developed an original statistical measure to quantify media narrative involvement, alongside team and individual performance variables.</li>
+        <li>Identified the statistically significant factors behind MVP voting and used them to correctly predict all 27 MVPs in the dataset.</li>
+      </ul>
+      <div class="stack">R · lm() · Basketball Reference data</div>
+    </section>
+
+    <section class="block">
+      <div class="entry-head">
+        <h3 class="entry-title">March Madness Spread Betting: Travel Distance Study</h3>
+        <span class="entry-meta">May 2026</span>
+      </div>
+      <ul class="entry-list">
+        <li>Designed and ran an independent statistical study testing whether travel distance disparity between teams predicts against-the-spread outcomes in the NCAA Tournament Round of 64.</li>
+        <li>Collected and cleaned data for 438 games, engineering three distance metrics: a multiplicative ratio, an additive threshold, and a combined filter.</li>
+        <li>Applied one-sided binomial tests across seven seed groupings and authored a formal research paper presenting the methodology, results, and analysis.</li>
+      </ul>
+      <div class="stack">Python · pandas · scipy</div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    &copy; 2026 Joseph Caliendo
+  </div>
+</footer>
+
+</body>
+</html>
